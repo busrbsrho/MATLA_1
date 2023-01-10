@@ -1,11 +1,13 @@
 package Ex2_2;
-import org.junit.Assert;
+
 import org.junit.Test;
-import static org.junit.jupiter.api.Assertions.*;
-//import org.junit.jupiter.api.Test;
-import org.junit.platform.commons.logging.Logger;
-import org.junit.platform.commons.logging.LoggerFactory;
-import java.util.concurrent.*;
+
+import java.util.concurrent.Callable;
+
+import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertFalse;
+import static org.junit.Assert.assertNotEquals;
+
 public class TaskTest {
     @Test
     public void createTask(){
@@ -14,7 +16,7 @@ public class TaskTest {
             return 5;
         };
        Task<Integer> task=Task.createTask(callable,taskType);
-        assertEquals(task.getTaskType(),TaskType.IO);
+       assertEquals(task.getTaskType(),TaskType.IO);
     }
     @Test
     public void equals(){

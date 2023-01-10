@@ -39,16 +39,13 @@ public class CustomExecutor extends ThreadPoolExecutor {
     }
 
     public void gracefullyTerminate() {
-        this.shutdown();
-        while (!this.getQueue().isEmpty()){
-            try {
-                this.awaitTermination(300*this.getQueue().size(),TimeUnit.MILLISECONDS);
-            }
-            catch (Exception e){
-                e.printStackTrace();
-            }
+        try {
+            super.shutdown();
+            while (!super.awaitTermination(10,TimeUnit.MILLISECONDS));
         }
-
+        catch (InterruptedException e){
+            e.printStackTrace();
+        }
     }
 
     public int getCurrentMax() {
