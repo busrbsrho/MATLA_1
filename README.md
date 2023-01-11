@@ -23,9 +23,13 @@ the method will return the total amount of the lines of all the files using Thre
 
 
 
-**uml diagram of the class : **
+**uml diagram of the class :**
 ![WhatsApp Image 2023-01-10 at 20 53 23](https://user-images.githubusercontent.com/118810462/211641778-a463f5a1-e4ce-4d54-83c2-de62cfe1a156.jpeg)
 
-### MyThread 
-a class that inheriate from the Therad class , implemented the run method as a method to count all the lines in a specified file.
-used for the third function . 
+#### MyThread 
+a class that inheriate from the Thread class , implemented the run method as a method to count all the lines in a specified file.
+used for the third function.   
+
+#### myThreadPool 
+a class that implements the Callable class , modified the call() method so that it will return the amount of lines 
+
