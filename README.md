@@ -1,7 +1,6 @@
 # oop_Assignment_2
 
-#### This is the third assignment of oop , in this assignment we have implemented and used few of the design patterns that we have learnd 
-#### through the semester, such as the: Observer , Adapter , Factorial. very important design patters which are used world-wide.
+ #### This is the third assignment of oop , in this assignment we have implemented and used few of the design patterns that we have learnd    through the semester, such as the: Observer , Adapter , Factorial. very important design patters which are used world-wide.
 
 
 
@@ -15,7 +14,8 @@ createTextFiles , getNumOfLines , getNumOfLineThread and getNumOfLinesThreadPool
 
 3. **getNumOfLinesThread(String [] fileNames)** - the method receivs an array which contains names of files , the method will return the total amount of the lines of all the files using Threads.
 
-4. **getNumOfLinesThreadPool(String [] fileNames)** - the method receivs an array which contains names of files , the method will return the total amount of the lines of all the files using ThreadPool.
+4. **getNumOfLinesThreadPool(String [] fileNames)** - the method receivs an array which contains names of files, 
+the method will return the total amount of the lines of all the files using ThreadPool.
 
  
 
@@ -26,6 +26,6 @@ createTextFiles , getNumOfLines , getNumOfLineThread and getNumOfLinesThreadPool
 **uml diagram of the class : **
 ![WhatsApp Image 2023-01-10 at 20 53 23](https://user-images.githubusercontent.com/118810462/211641778-a463f5a1-e4ce-4d54-83c2-de62cfe1a156.jpeg)
 
-## MyThread 
-a class that 
-
+### MyThread 
+a class that inheriate from the Therad class , implemented the run method as a method to count all the lines in a specified file.
+used for the third function . 
