@@ -25,13 +25,14 @@ the method will return the total amount of the lines of all the files using Thre
 
 #### MyThread 
 a class that inheriate from the Thread class , implemented the run method as a method to count all the lines in a specified file.
-used for the third function.   
+used for the third mehod.   
 
 #### MyThreadPool 
-a class that implements the Callable class , modified the call() method so that it will return the amount of lines in a specified file.
+a class that implements the Callable class , modified the call() method so that it will return the amount of lines in a specified file. 
+used for the forth method.
 
 
 ## Conclusions 
 ![WhatsApp Image 2023-01-10 at 20 21 19](https://user-images.githubusercontent.com/118810462/211872980-5a935c05-b58a-4180-9b7a-97200b602edf.jpeg)
 
-we have tested both the ThreadPool and Threads methods and checked 
+we have tested both the ThreadPool and Threads methods and checked what is faster , as shown above in large scale of files the Threads method won the race , however they were super close. the reason that the Threads method won is 
