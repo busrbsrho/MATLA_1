@@ -35,4 +35,4 @@ used for the forth method.
 ## Conclusions 
 ![WhatsApp Image 2023-01-10 at 20 21 19](https://user-images.githubusercontent.com/118810462/211872980-5a935c05-b58a-4180-9b7a-97200b602edf.jpeg)
 
-we have tested both the ThreadPool and Threads methods and checked what is faster , as shown above in large scale of files the Threads method won the race , however they were super close. the reason that the Threads method won is 
+we have tested both the ThreadPool and Threads methods and checked what is faster , as shown above in large scale of files the Threads method won the race , however they were super close. To our knowledge the reason that the Threads method won is because in this specific implementation the Threads didn't have to do deal with all the managment and the threads creation like the ThreadPool .
