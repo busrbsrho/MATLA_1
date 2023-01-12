@@ -55,4 +55,16 @@ ought to use an Executor of some type, such as a ThreadPoolExecutor.
 ![package_2](https://user-images.githubusercontent.com/118810462/212095986-e5bb0427-0042-4e7c-b0fe-fde41da5e8f2.png)
 
 #### TaskType 
-an enum class made to define the type of the task
+an enum class made to define the type of the task 
+
+#### Task 
+ Represents a task object with a TaskType and a Callable operation.
+ this class uses the Factory method desgin pattern. so that the only way to create an object of this type is to use
+ the createtask method.
+ 
+#### CustomExecuter 
+inherites from the ThreadPool class. this class is used to desribe our own ThreadPool.Our ThreadPool contains threads with task priotity , moreover this class also always hold the task with the most priority at any given moment.
+ 
+ #### CustomFutureTask
+  an adapter desigend class . since the ThreadPool only accepts objects of the Runnable type we had to create another class that will allow us to submit Callable type object , therefore the class inheriate from the FutureTask class which on itself implemented the RunnableFutureTask class . moreover the class implimants the Compareable class so that we could compare between two tasks priority.
+ 
