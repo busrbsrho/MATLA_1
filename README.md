@@ -1,6 +1,6 @@
 # oop_Assignment_2
 
- #### This is the third assignment of oop , in this assignment we have implemented and used few of the design patterns that we have learnd    through the semester, such as the: Observer , Adapter , Factorial. very important design patters which are used world-wide.
+ #### This is the third assignment of oop , in this assignment we have implemented and used few of the design patterns that we have learnd    through the semester, such as the: Observer , Adapter , Factorial. very important design patters which are used world-wide.another large and important subject that we have implented in our code is the use of Thread and ThreadPool which let developers to do multy-tasking in a asynchronized manner.
 
 
 
