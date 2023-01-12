@@ -50,10 +50,9 @@ interface, there are no constructors in the Thread class that get a Callable<V> 
 ought to use an Executor of some type, such as a ThreadPoolExecutor.
  
 
+### uml diagram:
 
+![package_2](https://user-images.githubusercontent.com/118810462/212095986-e5bb0427-0042-4e7c-b0fe-fde41da5e8f2.png)
 
-
-
- 
- 
-
+#### TaskType 
+an enum class made to define the type of the task
