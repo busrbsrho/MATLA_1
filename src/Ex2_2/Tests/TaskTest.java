@@ -1,5 +1,7 @@
-package Ex2_2;
+package Ex2_2.Tests;
 
+import Ex2_2.Task;
+import Ex2_2.TaskType;
 import org.junit.Test;
 
 import java.util.concurrent.Callable;
@@ -35,6 +37,16 @@ public class TaskTest {
     }
     @Test
     public void getTaskType(){
+        Callable<Integer> callable=()->{
+            return 5;
+        };
+        TaskType taskType_2=TaskType.COMPUTATIONAL;
+        Task <Integer > task_0= Task.createTask(callable);
+        Task <Integer > task_1= Task.createTask(callable);
+        Task <Integer > task_2= Task.createTask(callable,taskType_2);
+
+        assertEquals(task_1.getTaskType(),task_0.getTaskType());
+        assertNotEquals(task_2.getTaskType(),task_0.getTaskType());
 
     }
 
