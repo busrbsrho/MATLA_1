@@ -5,6 +5,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.concurrent.*;
 
+
 public class CustomExecutor extends ThreadPoolExecutor {
     private PriorityBlockingQueue<Integer> priorityQueue=new PriorityBlockingQueue<>();
     public CustomExecutor() {
@@ -55,5 +56,7 @@ public class CustomExecutor extends ThreadPoolExecutor {
         }
         return 0;
     }
+
+
 }
 
