@@ -5,7 +5,7 @@
 
 
 ## First part of the assignment.
-in this part we were requierd to make a class named Ex_2 which conatins total of 4 methods: 
+in this part we were requierd to make a class named Ex2_1 which conatins total of 4 methods: 
 createTextFiles , getNumOfLines , getNumOfLineThread and getNumOfLinesThreadPool.
 
 1. **createTextFile (int n, int seed, int bound)** - the mehod creats n text files and generates a random number of lines for each and every one of them , then the method return an array size of n wich contains the names of the files.
@@ -35,4 +35,25 @@ used for the forth method.
 ## Conclusions 
 ![WhatsApp Image 2023-01-10 at 20 21 19](https://user-images.githubusercontent.com/118810462/211872980-5a935c05-b58a-4180-9b7a-97200b602edf.jpeg)
 
-we have tested both the ThreadPool and Threads methods and checked what is faster , as shown above in large scale of files the Threads method won the race , however they were super close. To our knowledge the reason that the Threads method won is because in this specific implementation the Threads didn't have to do deal with all the managment and the threads creation like the ThreadPool .
+we have tested both the ThreadPool and Threads methods and checked which is faster , as shown above in large scale of files the Threads method won the race , however they were super close. To our knowledge the reason that the Threads method won is because in this specific implementation the Threads didn't have to do deal with all the managment and the threads creation like the ThreadPool .
+
+
+
+## Second part of the assignment
+In this part we were requierd to give priority to tasks , unlike java which enables developers to set the priority of a thread, but not the Runnable operation it executes.
+Tightly coupling the operation with the execution path that runs it creates major drawback when
+using an executor such as a ThreadPoolExecutor: the collection of threads in an executor is defined by
+a ThreadFactory. By default, it creates all threads with the same priority and non-daemon status.
+
+Moreover, if we wish to execute a returning value operation, for example using the Callable<V>
+interface, there are no constructors in the Thread class that get a Callable<V> as parameter and we
+ought to use an Executor of some type, such as a ThreadPoolExecutor.
+ 
+
+
+
+
+
+ 
+ 
+
